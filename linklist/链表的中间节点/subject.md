@@ -29,5 +29,6 @@ ans.val = 3, ans.next.val = 4, ans.next.next.val = 5, 以及 ans.next.next.next 
 ```
 
 ### 解析
-方法1: 存在数组中 然后取数组中间的那一个 ans.js
-方法2: 快慢指针 ans2.js
+方法1: 存在数组中,然后取数组中间的那一个 ans.js
+
+方法2: 快慢指针, 创建两个指针，指针1是指针2的2倍速,当指针1到达尾部当的时候指针2必然在中间 ans2.js
