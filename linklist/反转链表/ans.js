@@ -9,16 +9,16 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var reverseList = function(head) {
+var reverseList = function (head) {
   let curr = null,
-      prev = head
-  
-  while (prev) {
-      let t = prev.next
+    prev = head
 
-      prev.next = curr
-      curr = prev
-      prev = t
+  while (prev) {
+    let t = prev.next
+
+    prev.next = curr
+    curr = prev
+    prev = t
   }
 
   return curr

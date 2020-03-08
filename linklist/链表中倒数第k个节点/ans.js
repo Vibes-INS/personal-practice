@@ -10,21 +10,21 @@
  * @param {number} k
  * @return {ListNode}
  */
-var getKthFromEnd = function(head, k) {
+var getKthFromEnd = function (head, k) {
   if (!head) {
-      return
+    return
   }
 
   let pointer = head
   let pointer2 = head
   let count = 0
   while (pointer !== null) {
-      pointer = pointer.next
-      count++
+    pointer = pointer.next
+    count++
 
-      if (count > k) {
-          pointer2 = pointer2.next
-      }
+    if (count > k) {
+      pointer2 = pointer2.next
+    }
   }
 
   return pointer2
