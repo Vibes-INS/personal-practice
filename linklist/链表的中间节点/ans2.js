@@ -10,7 +10,7 @@
  * @return {ListNode}
  */
 var middleNode = function(head) {
-  let show = head
+  let slow = head
   let fast = head
   while (fast !== null && fast.next !== null) {
       show = show.next
