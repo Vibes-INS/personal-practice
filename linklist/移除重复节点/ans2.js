@@ -25,7 +25,7 @@ var removeDuplicateNodes = function (head) {
 
 var isContain = function (head, target) {
   if (!head) {
-    return
+    return false
   }
 
   for (let p = head; p !== null; p = p.next) {
